@@ -1,0 +1,7 @@
+1. 한 프로젝트 내에 똑같은 이름의 메소드 혹은 클래스를 만들면 나중에 만들었던 메소드 혹은 클래스는 없는 메소드가 되니 주의하자.
+
+-> A.java에 class ConsumerThread extends Thread를 만들고 나서
+-> 나중에 B.java에 class ConsumerThread extends Thread를 만들었다고 하자.
+
+=> 위 상황이 되면, B.java에 있는 ConsumerThread는 아예 없는 클래스가 되어서 객체를 만드는 것이 불가능해진다.
+그것을 눈치채지 못하고, 객체를 만들어 실행하면 "noSuchMethodError: void 클래스 명"이 발생하니 주의하면 된다.
