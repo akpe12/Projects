@@ -1,10 +1,5 @@
-from User import User
-from Cpu import Cpu
 import random
-#가위바위보 결과 처리
-#몫 빼앗기
-#동전 던지기
-#현재까지 결과 메시지(게임 메시지 안에)
+
 class Judge:
     def __init__(self):
         self.coin = ["앞면", "뒷면"]
