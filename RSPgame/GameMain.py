@@ -16,16 +16,20 @@ class GameMain:
     def overMsg(self, player1, player2):
         if player1.getLife() == 0:
             if player1.getName() != None:
-                print("목숨 {} {}개 vs {} {}개로 패배했습니다.".format(player1.getName(), 
-                            player1.getLife(), player2.getName(), player2.getLife()))
+                print("목숨 {} {}개 vs {} {}개로 패배했습니다."
+                      .format(player1.getName(), player1.getLife(),
+                              player2.getName(), player2.getLife()))
             else:
-                print("목숨 user {}개 vs cpu {}개로 패배했습니다.".format(player1.getLife(), player2.getLife()))
+                print("목숨 user {}개 vs cpu {}개로 패배했습니다."
+                      .format(player1.getLife(), player2.getLife()))
         else:
             if player1.getName() != None:
-                print("목숨 {} {}개 vs {} {}개로 승리했습니다.".format(player1.getName(), 
-                            player1.getLife(), player2.getName(), player2.getLife()))
+                print("목숨 {} {}개 vs {} {}개로 승리했습니다."
+                      .format(player1.getName(), player1.getLife(),
+                              player2.getName(), player2.getLife()))
             else:
-                print("목숨 user {}개 vs cpu {}개로 승리했습니다.".format(player1.getLife(), player2.getLife()))
+                print("목숨 user {}개 vs cpu {}개로 승리했습니다."
+                      .format(player1.getLife(), player2.getLife()))
                 
         print()
         print("다시 하시겠습니까?")
@@ -76,25 +80,6 @@ class GameMain:
                 
         player1.setWeapon(weapon)
         player2.setWeapon()
-        #반복문을 돌면서 가위바위보
-        #할 때마다 정할 것 -> 낼 무기
-        #무기 물어볼 때, 오타면 다시 묻기
-        # while(self.getRunning()):
-        #     print("어떤 것을 내시겠습니까?")
-        #     print("가위 / 바위 / 보: ", end="")
-        #     weapon = input()
-        #     if weapon not in ["가위", "바위", "보"]:
-        #         while(weapon not in ["가위", "바위", "보"]):
-        #             print()
-        #             print("다시 내주세요.")
-        #             print()
-        #             print("어떤 것을 내시겠습니까?")
-        #             print("가위 / 바위 / 보: ", end="")
-        #             weapon = input()
-                    
-        #     player1.setWeapon(weapon)
-        #     player2.setWeapon()
-            
         
     def nameMaking(self, player1):
         print("User의 이름을 정하시겠습니까?")
@@ -124,7 +109,6 @@ class GameMain:
         self.prepared = False
         player1.resetInfo()
         player2.resetInfo()
-        # self.GameStart(player1, player2)
             
 game = GameMain()
 me = User()

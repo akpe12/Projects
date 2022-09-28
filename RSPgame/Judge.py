@@ -1,10 +1,8 @@
 from User import User
 from Cpu import Cpu
 import random
-#가위바위보 결과 처리
-#몫 빼앗기
-#동전 던지기
-#현재까지 결과 메시지(게임 메시지 안에)
+import time
+
 class Judge:
     def __init__(self):
         self.coin = ["앞면", "뒷면"]
@@ -38,15 +36,27 @@ class Judge:
                 
         self.getResult(player1, player2)
     
+    #승패 판단
     def getResult(self, player1, player2):
+        print()
+        print("가위...")
+        time.sleep(1.5)
+        print()
+        print("바위...")
+        time.sleep(1.5)
+        print()
+        print("보!")
+        
         if player1.getName() != None:
             print()
-            print("{} : {} vs {} : {}".format(player1.getName(), player1.getWeapon(),
-                                              player2.getName(), player2.getWeapon()))
+            print("{} : {} vs {} : {}"
+                  .format(player1.getName(), player1.getWeapon(),
+                        player2.getName(), player2.getWeapon()))
             print()
         else:
             print()
-            print("user : {} vs cpu : {}".format(player1.getWeapon(), player2.getWeapon()))
+            print("user : {} vs cpu : {}"
+                  .format(player1.getWeapon(), player2.getWeapon()))
             print()
         
         if self.result == "win":
@@ -69,6 +79,7 @@ class Judge:
                 
         self.Judgement(player1, player2)    
     
+    #가위바위보 결과에 따른 업보
     def Judgement(self, player1, player2):
         if self.result == "win":
             self.sentence(player2)
@@ -123,6 +134,13 @@ class Judge:
                 cpuCoin = self.coin[part]
         part = random.randint(0, 1)
         resultCoin = self.coin[part]
+        
+        print("휘리릭...")
+        time.sleep(1.5)
+        print()
+        print("탁!")
+        time.sleep(1)
+        print()
         
         print("동전은 {}이 나왔습니다.".format(resultCoin))
         
