@@ -1,5 +1,3 @@
-from User import User
-from Cpu import Cpu
 import random
 import time
 
