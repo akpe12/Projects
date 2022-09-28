@@ -18,3 +18,6 @@ class Player:
         
     def setWeapon(self, weapon):
         self.weapon = weapon
+
+    def resetInfo(self):
+        self.life = 3

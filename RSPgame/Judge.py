@@ -1,5 +1,10 @@
+from User import User
+from Cpu import Cpu
 import random
-
+#가위바위보 결과 처리
+#몫 빼앗기
+#동전 던지기
+#현재까지 결과 메시지(게임 메시지 안에)
 class Judge:
     def __init__(self):
         self.coin = ["앞면", "뒷면"]
@@ -89,11 +94,11 @@ class Judge:
     def currentState(self, player1, player2):
         if player1.getLife() != 0 and player2.getLife() != 0:
             if player1.getName() != None:
-                    print("현재 목숨 {} {}개 vs {} {}개 입니다."
+                    print("현재 목숨 {} {}개 vs {} {}개입니다."
                         .format(player1.getName(), player1.getLife(),
                                 player2.getName(), player2.getLife()))
             else:
-                print("현재 목숨 user {}개 vs cpu {}개 입니다."
+                print("현재 목숨 user {}개 vs cpu {}개입니다."
                         .format(player1.getLife(),player2.getLife()))
     #코인 토스        
     def coinToss(self, player1, player2):
