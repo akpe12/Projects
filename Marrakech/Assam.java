@@ -25,16 +25,16 @@ public class Assam {
     public void setDirection(String direction){
         this.direction = direction;
         if (direction.equals("east")){
-            assamImage = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/East.png");
+            assamImage = new ImageIcon("/");
         }
         else if (direction.equals("west")){
-            assamImage = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/West.png");
+            assamImage = new ImageIcon("/");
         }
         else if (direction.equals("south")){
-            assamImage = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/South.png");
+            assamImage = new ImageIcon("/");
         }
         else if (direction.equals("north")){
-            assamImage = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/North.png");
+            assamImage = new ImageIcon("/");
         }
     }
 
