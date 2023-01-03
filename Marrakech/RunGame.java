@@ -37,11 +37,11 @@ import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 
 public class RunGame extends JFrame{
-    private ImageIcon icon = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/board.png");
-    private ImageIcon up = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/Up.png");
-    private ImageIcon down = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/Down.png");
-    private ImageIcon left = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/Left.png");
-    private ImageIcon right = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/Right.png");
+    private ImageIcon icon = new ImageIcon("/");
+    private ImageIcon up = new ImageIcon("/");
+    private ImageIcon down = new ImageIcon("/");
+    private ImageIcon left = new ImageIcon("/");
+    private ImageIcon right = new ImageIcon("/");
     private JLabel Up = new JLabel(up);
     private JLabel Down = new JLabel(down);
     private JLabel Left = new JLabel(left);
