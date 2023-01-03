@@ -3,10 +3,10 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Checker extends JLabel{
-    private ImageIcon south = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/South.png");
-    private ImageIcon north = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/North.png");
-    private ImageIcon east = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/East.png");
-    private ImageIcon west = new ImageIcon("/Users/chanwoo/Desktop/java/Marrakech!!/Images/West.png");
+    private ImageIcon south = new ImageIcon("/");
+    private ImageIcon north = new ImageIcon("/");
+    private ImageIcon east = new ImageIcon("/");
+    private ImageIcon west = new ImageIcon("/");
     private String direction;
     private int row;
     private int col;
