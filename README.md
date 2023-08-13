@@ -1,4 +1,5 @@
 # Projects
 ### Marrakech
 
-![Marrakech_cpu](https://github.com/akpe12/Projects/assets/77143331/236df8cd-bd0d-4c60-908c-2fde637c5d06)
+https://github.com/akpe12/Projects/assets/77143331/0874c491-a531-4175-9f7a-50347e6f0934
+
